@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="C:\Users\Aspire2 Student\Desktop\website\css\chc.css">
+        <script src="chc.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Accommodation available in Christchurch</h2>
+  <p>lincoln Road, Addington<br>
+just pay $350PW
+  </p>
+</style>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://trademe.tmcdn.co.nz/photoserver/plus/971142295.jpg" alt="outside look" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://trademe.tmcdn.co.nz/photoserver/plus/971142318.jpg" alt="kitchen" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://trademe.tmcdn.co.nz/photoserver/plus/971142331.jpg" alt="lounge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://trademe.tmcdn.co.nz/photoserver/plus/971142475.jpg" alt="bedroom" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+<h2>Checkout</h2>
+      <!-- Payment form starts from here -->
+      <form name="pay_form" id="pay_form">
+        <fieldset>
+        <div class"form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="form-control" id="name">
+          <span class="error" id="name_req"></span>
+        </div>
+</fieldset>
+        <br><fieldset>
+        <div class"form-group">
+          <label for="address">Address</label>
+          <input name="address" class="form-control" id="address"></input>
+          <span class="error" id="address_req"></span>
+        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+        <div class"form-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" class="form-control" id="email">
+          <span class="error" id="email_req"></span>
+        </div>
+      </fieldset><br>
+      <fieldset>
+        <div class"form-group">
+          <label for="hcard">Card Holder Name</label>
+          <input type="text" name="hcard" class="form-control" id="hcard" maxlength="16">
+          <span class="error" id="hcardreq"></span>
+        </div></fieldset><br>
+        <fieldset>
+       <div class"form_group">
+     <label for="card-number">Card Number</label>
+     <input type="num" id="card-number-3" class="form-control" maxlength="4"></input>
+     <input type="num" id="card-number-1" class="form-control" maxlength="4"></input>
+     <input type="num" id="card-number-2" class="form-control" maxlength="4"></input>
+     <input type="num" id="card-number" class="form-control" maxlength="4"></input>
+     <span class="error" id="card-number-req"></span>
+   </fieldset>
+        <fieldset>
+    <div class"form-group">
+    <div class="card-ccv">
+      <label for="card-ccv">CCV</label>
+      <input type="text" id="card-ccv" maxlength="3"></input>
+      <span class="error" id="card-ccv"></span>
+    </div>
+    </fieldset>
+
+        <fieldset>
+       <div class"form-group">
+   <div class="fieldset-expiration">
+     <label for="card-expiration-month">Expiration date</label>
+     <div class="select">
+       <select id="card-expiration-month">
+         <option></option>
+         <option>01</option>
+         <option>02</option>
+         <option>03</option>
+         <option>04</option>
+         <option>05</option>
+         <option>06</option>
+         <option>07</option>
+         <option>08</option>
+         <option>09</option>
+         <option>10</option>
+         <option>11</option>
+         <option>12</option>
+       </select>
+     </div><br>
+       <div class"form-group">
+     <div class="select">
+       <select id="card-expiration-year">
+         <option></option>
+         <option>2019</option>
+         <option>2020</option>
+         <option>2021</option>
+         <option>2022</option>
+         <option>2023</option>
+         <option>2024</option>
+         <option>2025</option>
+         <option>2026</option>
+         <option>2027</option>
+         <option>2028</option>
+       </select>
+     </div>
+   </fieldset>
+        <fieldset>
+        <div class"form-group">
+          <label for="card_type">Type of Credit Card</label><br>
+          <input type="radio" name="card_type" value="mc">
+           <label for="card_type" id="master">Mastercard</label>
+          <input type="radio" name="card_type"  value="visa">
+          <label for="card_type" id="vsa">Visa</label>
+          <input type="radio" name="card_type" value="AmEx">
+          <label for="card_type" id="AmEx">American Express</label>
+          <span class="error" id="card_type_req"></span>
+        </div>
+        <div class"form-group">
+
+          <input type="checkbox" name="tnc" class="" id="tnc1">
+          <label for="term" id="tnc2"> I have read the terms and conditions.</label>
+        </div>
+
+      <input type="button" onclick="myValidation()" value="Pay" class="btn btn-primary">
+      <button type="reset" value="Reset" class="btn btn-primary">Reset</button>
+      </form>
+
+      <div>
+
+      </div>
+
+</body>
+</head>
+</html>
